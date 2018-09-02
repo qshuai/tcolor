@@ -13,7 +13,7 @@ func SetPanic() {
 
 // WithColor pack the input string with the specified decorated
 // color type and return the assembled string.
-func WithColor(colorType tcolor, str string) string {
+func WithColor(colorType color, str string) string {
 	if int(colorType) > len(colorSet)-1 {
 		if isPanic {
 			panic("not found the specified color type")
@@ -28,7 +28,7 @@ func WithColor(colorType tcolor, str string) string {
 // GetColor return the origin defined color label for your custom
 // format using. For example, you can using the returned color label
 // to get a passage text instead of the single string.
-func GetColor(colorType tcolor) string {
+func GetColor(colorType color) string {
 	if int(colorType) > len(colorSet)-1 {
 		if isPanic {
 			panic("not found the specified color type")

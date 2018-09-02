@@ -1,9 +1,9 @@
 package tcolor
 
-type tcolor uint8
+type color uint8
 
 const (
-	Black tcolor = iota
+	Black color = iota
 	Red
 	Green
 	Yellow
