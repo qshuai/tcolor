@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"tcolor"
+	"github.com/qshuai/tcolor"
 )
 
 func main() {
